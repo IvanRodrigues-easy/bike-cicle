@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+    .bloco{
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    #bicicletas{
+        background-color: #2e8b2e;
+    }
+    #pedais{
+        background-color: #1c1c1c;
+    }
+    </style>
+</head>
+<body id="body">
+    
+    <nav class="links">
+        <label for="rd_bicicletas">Bicicletas</label>
+        <label for="rd_pedais">Pedais</label>
+        <label for="rd_quadroscaloi">Quadros Caloi</label>
+        <label for="rd_aros">Aros</label>
+        <label for="rd_freios">Freios</label>
+    </nav>
+    <div class="scroll">
+        <input type="radio" name="grupo" id="rd_bicicletas"checked/>
+        <input type="radio" name="grupo" id="rd_pedais"/>
+        <input type="radio" name="grupo" id="rd_quadroscaloi"/>
+        <input type="radio" name="grupo" id="rd_aros"/>
+        <input type="radio" name="grupo" id="rd_freios">
+        <section class="sections">
+            <section class="bloco" id="bicicletas"></section>
+            <section class="bloco" id="pedais"></section>
+            <section class="bloco" id="quadroscaloi"></section>
+            <section class="bloco" id="aros"></section>
+            <section class="bloco" id="freios"></section>
+        </section>
+    </div>
+</body>
+
+
+</html>
