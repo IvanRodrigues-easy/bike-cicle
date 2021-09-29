@@ -9,6 +9,44 @@
             padding: 0;
             
         }
+        .links{
+            width:100%;
+            height: 50px;
+            position:fixed;
+            display: flex;
+        }
+
+        .links label{
+            padding: 10px 0;
+            flex-grow: 1;
+            cursor: pointer;
+            transition: all .4s;
+            text-align: center;
+            font-family: 'arial';
+            font-size: 100%;
+            color: #ffffff;
+        }
+        .links label:hover{
+            background-color: rgba(255, 255, 255, .2);
+        }
+        .scroll input{
+            display: none;
+        }
+        #rd_pedais:checked ~ .sections{
+            margin-top: -100vh;
+        }
+
+        #rd_quadroscaloi:checked ~ .sections{
+            margin-top: -200vh;
+        }
+
+        #rd_aros:checked ~ .sections{
+            margin-top: -300vh;
+        }
+
+        #rd_freios:checked ~ .sections{
+            margin-top: -400vh;
+        }
     .bloco{
         width: 100vw;
         height: 100vh;
@@ -16,11 +54,31 @@
         align-items: center;
         display: flex;
     }
+    .scroll{
+        display: flex;
+        width: 100vw;
+        height:100vh;
+        overflow: hidden;
+    }
+
+    .sections{
+        transition: all .4s     ;
+    }
     #bicicletas{
         background-color: #2e8b2e;
     }
     #pedais{
         background-color: #1c1c1c;
+    }
+
+    #quadroscaloi{
+        background-color: #7CFC00;
+    }
+    #aros{
+        background-color: #363636;
+    }
+    #freios{
+        background-color: #00FF7F;
     }
     </style>
 </head>
