@@ -2,8 +2,47 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Cicle Bike</title>
+    <link rel="shortcut icon" href="../bikecicle/images/logo-bike.png">
     <link rel="stylesheet" type="text/css" />
     <style>
+        @font-face {
+            font-family: 'logo';
+            src: url(../bikecicle/fonts/PermanentMarker-Regular.ttf);
+        }
+        @font-face {
+            font-family: 'padrao';
+            src: url(../bikecicle/fonts/NotoSansDisplay-Italic-VariableFont_wdth\,wght.ttf);
+        }
+
+        /*Manipulação dos H's*/
+        #bk{
+            font-family: 'logo';
+            font-size: 35px;
+            margin-left: 50px;
+            text-shadow: 0 0 0.91rem white;
+         
+        }
+
+
+
+
+      /*Manipulação da logo*/
+#logo{
+width: 24vw;
+height: 22vh;
+margin-top: 40px;
+border-radius: 100px;
+
+}
+#logo:hover{
+    transform: rotate(-30deg);
+    transition: 3s ease;
+}
+
+
+
+
         *{
             margin: 0;
             padding: 0;
@@ -50,9 +89,8 @@
     .bloco{
         width: 100vw;
         height: 100vh;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+    justify-content: center;
+    align-items: center; 
     }
     .scroll{
         display: flex;
@@ -91,6 +129,8 @@
         <label for="rd_aros">Aros</label>
         <label for="rd_freios">Freios</label>
     </nav>
+
+
     <div class="scroll">
         <input type="radio" name="grupo" id="rd_bicicletas"checked/>
         <input type="radio" name="grupo" id="rd_pedais"/>
@@ -98,11 +138,15 @@
         <input type="radio" name="grupo" id="rd_aros"/>
         <input type="radio" name="grupo" id="rd_freios">
         <section class="sections">
-            <section class="bloco" id="bicicletas"></section>
+            <section class="bloco" id="bicicletas">
+               <img id="logo" src="../bikecicle/images/logo-bike.png" alt="">
+               <h1 id="bk">Bike Cicle</h1>
+            </section>
             <section class="bloco" id="pedais"></section>
             <section class="bloco" id="quadroscaloi"></section>
             <section class="bloco" id="aros"></section>
             <section class="bloco" id="freios"></section>
+           
         </section>
     </div>
 </body>
