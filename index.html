@@ -4,121 +4,8 @@
     <meta charset="UTF-8">
     <title>Cicle Bike</title>
     <link rel="shortcut icon" href="../bikecicle/images/logo-bike.png">
-    <link rel="stylesheet" type="text/css" />
-    <style>
-        @font-face {
-            font-family: 'logo';
-            src: url(../bikecicle/fonts/PermanentMarker-Regular.ttf);
-        }
-        @font-face {
-            font-family: 'padrao';
-            src: url(../bikecicle/fonts/NotoSansDisplay-Italic-VariableFont_wdth\,wght.ttf);
-        }
-
-        /*Manipulação dos H's*/
-        #bk{
-            font-family: 'logo';
-            font-size: 35px;
-            margin-left: 50px;
-            text-shadow: 0 0 0.91rem white;
-         
-        }
-
-
-
-
-      /*Manipulação da logo*/
-#logo{
-width: 24vw;
-height: 22vh;
-margin-top: 40px;
-border-radius: 100px;
-
-}
-#logo:hover{
-    transform: rotate(-30deg);
-    transition: 3s ease;
-}
-
-
-
-
-        *{
-            margin: 0;
-            padding: 0;
-            
-        }
-        .links{
-            width:100%;
-            height: 50px;
-            position:fixed;
-            display: flex;
-        }
-
-        .links label{
-            padding: 10px 0;
-            flex-grow: 1;
-            cursor: pointer;
-            transition: all .4s;
-            text-align: center;
-            font-family: 'arial';
-            font-size: 100%;
-            color: #ffffff;
-        }
-        .links label:hover{
-            background-color: rgba(255, 255, 255, .2);
-        }
-        .scroll input{
-            display: none;
-        }
-        #rd_pedais:checked ~ .sections{
-            margin-top: -100vh;
-        }
-
-        #rd_quadroscaloi:checked ~ .sections{
-            margin-top: -200vh;
-        }
-
-        #rd_aros:checked ~ .sections{
-            margin-top: -300vh;
-        }
-
-        #rd_freios:checked ~ .sections{
-            margin-top: -400vh;
-        }
-    .bloco{
-        width: 100vw;
-        height: 100vh;
-    justify-content: center;
-    align-items: center; 
-    }
-    .scroll{
-        display: flex;
-        width: 100vw;
-        height:100vh;
-        overflow: hidden;
-    }
-
-    .sections{
-        transition: all .4s     ;
-    }
-    #bicicletas{
-        background-color: #2e8b2e;
-    }
-    #pedais{
-        background-color: #1c1c1c;
-    }
-
-    #quadroscaloi{
-        background-color: #7CFC00;
-    }
-    #aros{
-        background-color: #363636;
-    }
-    #freios{
-        background-color: #00FF7F;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../bikecicle/css/index.css" />
+   
 </head>
 <body id="body">
     
@@ -140,7 +27,32 @@ border-radius: 100px;
         <section class="sections">
             <section class="bloco" id="bicicletas">
                <img id="logo" src="../bikecicle/images/logo-bike.png" alt="">
+             
                <h1 id="bk">Bike Cicle</h1>
+              <h3 id="tipos">Tipos de bike </h3>
+              <div class="container">
+                  <input type="radio" id="foto1" name="grupo"checked/>
+                  <label for="foto1"><img src="../bikecicle/images/foto1.png" alt=""></label>
+
+                  <input type="radio" id="foto2" name="grupo">
+                  <label for="foto2"><img src="../bikecicle/images/foto2.png" alt=""></label>
+
+                  <input type="radio" id="foto3" name="grupo">
+                  <label for="foto3"><img src="../bikecicle/images/foto3.png" alt=""></label>
+
+                  <input type="radio" id="foto4" name="grupo">
+                  <label for="foto4"><img src="../bikecicle/images/foto4.png" alt=""></label>
+
+
+                  <div class="principal">
+                      <div class="slide">
+                          <img src="../bikecicle/images/foto1.png" alt="">
+                          <img src="../bikecicle/images/foto2.png" alt="">
+                          <img src="../bikecicle/images/foto3.png" alt="">
+                          <img src="../bikecicle/images/foto4.png" alt="">
+                      </div>
+                  </div>
+              </div>
             </section>
             <section class="bloco" id="pedais"></section>
             <section class="bloco" id="quadroscaloi"></section>
