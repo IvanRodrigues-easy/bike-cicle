@@ -8,39 +8,45 @@
     font-family: 'padrao';
     src: url(../fonts/NotoSansDisplay-Italic-VariableFont_wdth\,wght.ttf);
 }
-#body{
-    overflow: scroll;
+
+body{
+    display: flex;
 }
+
+
 /*Manipulação dos H's*/
-#bk{
-    font-family: 'logo1';
-    font-size: 30px;
-    display:inline-block;
-    text-shadow:0 0 0.91rem white;
-margin: auto;
+.bk_bike{
+    height: 630px; 
+    margin-top: -10px;
 }
-#tipos{
+.bk_bike h1{
+    margin: 1.2em auto;
+    font-family: 'logo1';
+    font-size: 35px ;
+    text-shadow:0 0 0.91rem white;
+    color: #000000ad;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.slidee{
+    background: no-repeat;
+}
+/*#tipos{
     justify-content: center;
     text-align: center;
+    font-size: 30px;
   margin: auto;
- 
+  font-family: 'logo1';
+}*/
+
+.principal{ 
+    width:100vw ;
+    height:100vh;  
 }
 
-.principal{
-   
-    width:480px ;
-    height:270px;
-    border: solid 1px rgb(0, 0, 0,.3 );
-    overflow:hidden;
-  
-}
 
-.slide{
- display: flex;
- width: 400%;
- transition:  all .8s;
-  
-}
 
 input[name="grupo"]:checked + label img{
     opacity: .7;
@@ -60,14 +66,13 @@ input[name="grupo"]:checked + label img{
 
 }
 
-.container{
-    width: 480px;
-    height: 270px;
+/*.container{
+    width: 100vw;
+    height: 100vh;
     margin: 150px auto;
   background-color: #363636;
 margin-top: 30px;
-
-}
+}*/
 
 label img{
     width: 120px;
@@ -99,8 +104,9 @@ transition: 3s ease;
     
 }
 .links{
+    background: rgb(0, 0, 0);
     width:100%;
-    height: 50px;
+    height: 35px;
     position:fixed;
     display: flex;
 }
@@ -138,14 +144,14 @@ transition: 3s ease;
 }
 .bloco{
 width: 100vw;
-height: 100vh;
+height: 300px;
 justify-content: center;
-align-items: center; 
+align-items: center;
 }
 .scroll{
 display: flex;
 width: 100vw;
-height:100vh;
+/* height:10vh; */
 overflow: hidden;
 }
 
@@ -153,18 +159,17 @@ overflow: hidden;
 transition: all .4s     ;
 }
 #bicicletas{
-background-color: #2e8b2e;
+background-color: rgba(172, 121, 55, 0.822);
 }
-#pedais{
-background-color: #1c1c1c;
+.pd_pedais{
+    height: 500px;
 }
-
 #quadroscaloi{
-background-color: #7CFC00;
+
 }
 #aros{
-background-color: #363636;
+
 }
 #freios{
-background-color: #00FF7F;
+
 }
