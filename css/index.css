@@ -23,7 +23,7 @@ body{
     margin: 1.2em auto;
     font-family: 'logo1';
     font-size: 35px ;
-    text-shadow:0 0 0.91rem white;
+    text-shadow:0 0 0.91rem rgba(255, 255, 255, 0.466);
     color: #000000ad;
     text-align: center;
     justify-content: center;
@@ -155,21 +155,43 @@ width: 100vw;
 overflow: hidden;
 }
 
+.p_about{
+    display: inline-block;
+    margin: 130px 10px auto 190px;
+    font-family: 'logo1';
+    font-size: 20px;
+    padding: 0;
+}
+.p2_about{
+    float:right;
+    display: inline-block;
+    font-family: 'logo1';
+    font-size: 20px;
+    margin: 130px 240px auto -2px;
+    padding: 0;
+}
+
+.p_about3{
+    text-align: center;
+    display: inline-block;
+    margin: 290px 40px ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(99, 98, 98, 0.808);
+}
+.about{
+    height: 550px;
+    background: url(../images/ciclista\ .png) no-repeat center 50px;
+}
+
 .sections{
 transition: all .4s     ;
 }
 #bicicletas{
-background-color: rgba(172, 121, 55, 0.822);
+background-color: rgba(16, 199, 10, 0.822);
 }
 .pd_pedais{
     height: 500px;
+    background-color: blue;
 }
-#quadroscaloi{
 
-}
-#aros{
-
-}
-#freios{
-
-}
