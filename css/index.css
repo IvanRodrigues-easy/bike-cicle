@@ -45,27 +45,6 @@ body{
     width:100vw ;
     height:100vh;  
 }
-
-
-
-input[name="grupo"]:checked + label img{
-    opacity: .7;
-}
-#foto2:checked ~ .principal .slide{
-    margin-left: -100%;
-
-}
-
-#foto3:checked ~ .principal .slide{
-    margin-left: -200%;
-
-}
-
-#foto4:checked ~ .principal .slide{
-    margin-left: -300%;
-
-}
-
 /*.container{
     width: 100vw;
     height: 100vh;
@@ -128,29 +107,29 @@ transition: 3s ease;
     display: none;
 }
 #rd_pedais:checked ~ .sections{
-    margin-top: -100vh;
+  margin-top: -178vh;
 }
 
 #rd_quadroscaloi:checked ~ .sections{
-    margin-top: -200vh;
+    margin-top: -277vh;
 }
 
 #rd_aros:checked ~ .sections{
-    margin-top: -300vh;
+    margin-top: -374vh;
 }
 
 #rd_freios:checked ~ .sections{
-    margin-top: -400vh;
+    margin-top: -473vh;
 }
 .bloco{
-width: 100vw;
-height: 300px;
+/*width: 100vw;*/
+
 justify-content: center;
 align-items: center;
 }
 .scroll{
 display: flex;
-width: 100vw;
+/*width: 300vw;*/
 /* height:10vh; */
 overflow: hidden;
 }
@@ -181,7 +160,7 @@ overflow: hidden;
 }
 .about{
     height: 550px;
-    background: url(../images/ciclista\ .png) no-repeat center 50px;
+    background: url(../images/ciclista.png) no-repeat center 50px;
 }
 
 .sections{
@@ -190,8 +169,22 @@ transition: all .4s     ;
 #bicicletas{
 background-color: rgba(16, 199, 10, 0.822);
 }
+
+#quadroscaloi{
+   background-color: rgb(228 73 208 / 75%);
+    height: 650px;
+}
 .pd_pedais{
-    height: 500px;
-    background-color: blue;
+    background-color: rgb(0 255 199 / 52%);
+    height: 650px
 }
 
+#aros{
+    background-color: red;
+    height: 650px;
+}
+
+#freios{
+    background-color: navy;
+    height: 650px;
+}
