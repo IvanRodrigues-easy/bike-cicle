@@ -10,15 +10,16 @@
 }
 
 body{
-    display: flex;
+  
 }
 
 
-/*Manipulação dos H's*/
-.bk_bike{
-    height: 695px;
 
+.bk_bike{
+
+    height: 695px;
     margin-top: -10px;
+  
 }
 .bk_bike h1{
     margin: 1.2em auto;
@@ -130,7 +131,7 @@ justify-content: center;
 align-items: center;
 }
 .scroll{
-display: flex;
+display: flexbox;
 /*width: 300vw;*/
 /* height:10vh; */
 overflow: hidden;
@@ -143,10 +144,8 @@ overflow: hidden;
    
 }
 */
-.bk_bike .galeria{
-    margin: auto;
-    width: 1073px;  
-    height: 700px;
+ .galeria{
+    height: 80%;
     position: relative;
     overflow: hidden;
 }
@@ -163,21 +162,25 @@ overflow: hidden;
 .foto:nth-child(4){
     animation-delay: 20s; 
 }
+
+
 .foto{
     position: absolute;
     opacity: 0;
     animation-name: animacao;
+    width: 100%;
+    height: 100%;
     animation-duration: 40s;
     animation-iteration-count: infinite;
     background-size: contain;
 }
 
 @keyframes animacao{
-    25%{
+    20%{
         opacity: 1;
-        transform: scale(1.2,1.1);
+        transform: scale( );
     }
-    50%{
+    30%{
         opacity: 0;
 
     }
@@ -218,10 +221,10 @@ overflow: hidden;
 .sections{
 transition: all .4s     ;
 }
-/*
+
 #bicicletas{
-background-color: rgba(16, 199, 10, 0.822);
-}*/
+background-color:black;
+}
 
 #quadroscaloi{
    background-color: rgb(228 73 208 / 75%);
