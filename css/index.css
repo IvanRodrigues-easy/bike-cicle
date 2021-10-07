@@ -16,7 +16,8 @@ body{
 
 /*Manipulação dos H's*/
 .bk_bike{
-    height: 630px; 
+    height: 695px;
+
     margin-top: -10px;
 }
 .bk_bike h1{
@@ -27,7 +28,8 @@ body{
     color: #000000ad;
     text-align: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(39, 35, 35, 0.2);
+    margin-bottom: 0;
 }
 
 .slidee{
@@ -133,6 +135,54 @@ display: flex;
 /* height:10vh; */
 overflow: hidden;
 }
+/*
+.bikeee{
+    height: 680px;
+
+    margin: -178px auto;
+   
+}
+*/
+.bk_bike .galeria{
+    margin: auto;
+    width: 1073px;  
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto:nth-child(1){
+
+}
+.foto:nth-child(2){
+ animation-delay: 10s;   
+}
+.foto:nth-child(3){
+    animation-delay: 15s; 
+}
+.foto:nth-child(4){
+    animation-delay: 20s; 
+}
+.foto{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    background-size: contain;
+}
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transform: scale(1.2,1.1);
+    }
+    50%{
+        opacity: 0;
+
+    }
+}
+
 
 .p_about{
     display: inline-block;
@@ -140,6 +190,7 @@ overflow: hidden;
     font-family: 'logo1';
     font-size: 20px;
     padding: 0;
+ 
 }
 .p2_about{
     float:right;
@@ -161,14 +212,16 @@ overflow: hidden;
 .about{
     height: 550px;
     background: url(../images/ciclista.png) no-repeat center 50px;
+    border: 5px 1px 3px solid black;
 }
 
 .sections{
 transition: all .4s     ;
 }
+/*
 #bicicletas{
 background-color: rgba(16, 199, 10, 0.822);
-}
+}*/
 
 #quadroscaloi{
    background-color: rgb(228 73 208 / 75%);
